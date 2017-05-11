@@ -1,0 +1,12 @@
+//
+   Created by cepe6 on 11.05.17.
+
+extends ../layouts/layout
+
+block content
+    form#login-form(action="/accounting/login", method="post")
+        label.account-label Log In
+        hr.account-hr
+        input(type="text" placeholder="Username")
+        input(type="password" placeholder="Password")
+        button(type="submit" style="margin-top: 10px").sign-button.account-sign-in-button Sign In

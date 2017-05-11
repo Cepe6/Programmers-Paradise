@@ -1,0 +1,10 @@
+extends ../layouts/layout
+
+block content
+    form#registration-form(action="/accounting/signup" method="post")
+        label.account-label Register
+        hr.account-hr
+        input(type="text" placeholder="Email" name="email")
+        input(type="password" placeholder="Password" name="password")
+        input(type="password" placeholder="Repeat password")
+        button(type="submit").sign-button.account-sign-up-button Sign Up

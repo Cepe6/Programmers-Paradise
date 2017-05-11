@@ -1,15 +1,20 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
+  skip_before_action :authorize, only: [:new, :create, :update]
+
+  layout 'application'
 
   # GET /users
   # GET /users.json
   def index
+    set_profile
     @users = User.all
   end
 
   # GET /users/1
   # GET /users/1.json
   def show
+    set_profile
   end
 
   # GET /users/new
@@ -19,6 +24,7 @@ class UsersController < ApplicationController
 
   # GET /users/1/edit
   def edit
+    set_profile
   end
 
   # POST /users
@@ -26,14 +32,11 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
 
-    respond_to do |format|
-      if @user.save
-        format.html { redirect_to @user, notice: 'User was successfully created.' }
-        format.json { render :show, status: :created, location: @user }
-      else
-        format.html { render :new }
-        format.json { render json: @user.errors, status: :unprocessable_entity }
-      end
+    if @user.save
+      session[:user_id] = @user.id
+      redirect_to @user, notice: 'User was successfully created'
+    else
+      redirect_to '/users/new', notice: 'Something went wrong'
     end
   end
 
@@ -54,6 +57,7 @@ class UsersController < ApplicationController
   # DELETE /users/1
   # DELETE /users/1.json
   def destroy
+    set_profile
     @user.destroy
     respond_to do |format|
       format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
@@ -62,6 +66,13 @@ class UsersController < ApplicationController
   end
 
   private
+    def set_profile
+      @user = User.find_by(id: session[:user_id])
+      @profile_link = @user
+      @header_picture = @user.avatar.url(:thumb)
+      @profile_picture = @user.avatar.url(:medium)
+    end
+
     # Use callbacks to share common setup or constraints between actions.
     def set_user
       @user = User.find(params[:id])
@@ -69,6 +80,6 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit(:username, :email, :encrypted_password)
+      params.require(:user).permit(:username, :email, :password_digest, :avatar)
     end
 end

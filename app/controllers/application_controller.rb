@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
   protected
   def authorize
     unless User.find_by(id: session[:user_id])
-      redirect_to login_url, alert: 'You thought you could gain unauthorised access? LOL'
+      redirect_to '/login', alert: 'You thought you could gain unauthorised access? LOL'
     end
   end
 end

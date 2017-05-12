@@ -46,7 +46,7 @@ class UsersController < ApplicationController
   def update
     set_profile
     respond_to do |format|
-      if @user.update(user_params)
+      if @user.update(edit_params)
         format.html { redirect_to @user, notice: 'User was successfully updated.' }
         format.json { render :show, status: :ok, location: @user }
       else
@@ -83,6 +83,10 @@ class UsersController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_user
       @user = User.find(params[:id])
+    end
+
+    def edit_params
+      params.require(:user).permit(:username, :password_digest, :country, :position, :gender, :avatar)
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

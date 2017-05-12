@@ -1,0 +1,32 @@
+<%= form_for(user) do |f| %>
+    <div class="field">
+      <%= f.label :username %>
+      <%= f.text_field :username %>
+    </div>
+
+    <div class="field">
+      <%= f.label :password_digest %>
+      <%= f.password_field :password_digest %>
+    </div>
+
+    <%= f.file_field :avatar %>
+
+    <div class="field">
+      <%= f.label :country %>
+      <%= f.text_field :country %>
+    </div>
+
+    <div class="field">
+      <%= f.label :position %>
+      <%= f.text_field :position %>
+    </div>
+
+    <div class="field">
+      <%= f.label :gender %>
+      <%= f.select :gender, %w(Male Female Other)%>
+    </div>
+
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+<% end %>

@@ -37,7 +37,7 @@ class UsersController < ApplicationController
       session[:user_id] = @user.id
       redirect_to @user, notice: 'User was successfully created'
     else
-      redirect_to '/users/new', notice: @user.errors.message.first
+      redirect_to '/users/new', notice: @user.errors.messages.first
     end
   end
 

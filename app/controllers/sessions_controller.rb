@@ -1,9 +1,12 @@
 class SessionsController < ApplicationController
   skip_before_action :authorize
   def new
+    @header_picture = 'account.png'
   end
 
   def create
+    @header_picture = 'account.png'
+
     user = User.find_by(username: params[:username])
     if user and user.authenticate(params[:password_digest])
       @user = user

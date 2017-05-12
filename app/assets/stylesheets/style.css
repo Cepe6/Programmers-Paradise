@@ -37,3 +37,27 @@ body {
   text-decoration: none;
   text-shadow: 0 1px 0 #2f6627;
 }
+
+#profile-header {
+    display: inline-block;
+    height: 150px;
+}
+
+.profile-name {
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+}
+
+.profile-points {
+    margin: 0 auto;
+    display: inline;
+}
+
+#profile-picture-page {
+    max-width: 150px;
+}
+
+.account-header {
+    
+}

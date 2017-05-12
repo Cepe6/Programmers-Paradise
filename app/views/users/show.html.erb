@@ -1,36 +1,53 @@
 <p id="notice"><%= notice %></p>
-
-<%= image_tag(@user.avatar.url(:medium), :alt => 'Profile picture goes there', :id => 'profile-picture-page') %>
-<div id="acc-info">
-  <p>
+<div class="account-header bordering">
+  <%= image_tag(@user.avatar.url(:medium), :class => 'bordering', :id => 'profile-picture-page') %>
+  <div class="profile-name bordering">
     <strong>Username:</strong>
     <%= @user.username %>
-  </p>
+    <br />
+    <strong>E-mail:</strong>
+    <%= @user.email %>
+  </div>
 
-  <p>
+  <div class="profile-points bordering">
+    <strong>Forum points:</strong>
+    <%= @user.forum_points %>
+
+    <strong>Tutorial points:</strong>
+    <%= @user.tutorial_points %>
+
+    <strong>Teaching points:</strong>
+    <%= @user.teaching_points %>
+  </div>
+</div>
+
+<div id="acc-info" class="bordering">
+  <div class="profile-info">
+    <strong>Username:</strong>
+    <%= @user.username %>
+  </div>
+
+  <div class="profile-info">
     <strong>Email:</strong>
     <%= @user.email %>
-  </p>
+  </div>
 
-  <p>
-    <strong>Encrypted password:</strong>
-    <%= @user.password_digest %>
-  </p>
-
-  <p>
+  <div class="profile-info">
     <strong>Country:</strong>
     <%= @user.country %>
-  </p>
+  </div>
 
-  <p>
+  <div class="profile-info">
     <strong>Gender:</strong>
     <%= @user.gender %>
-  </p>
+  </div>
 
-  <p>
+  <div class="profile-info">
     <strong>Position:</strong>
     <%= @user.position %>
-  </p>
+  </div>
+
+
 </div>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |

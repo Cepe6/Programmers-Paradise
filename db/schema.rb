@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170511231330) do
+ActiveRecord::Schema.define(version: 20170512092246) do
+
+  create_table "jobs", force: :cascade do |t|
+    t.integer  "author_id"
+    t.text     "description"
+    t.string   "job_type"
+    t.integer  "salary"
+    t.string   "currency"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.string   "title"
+  end
 
   create_table "users", force: :cascade do |t|
     t.boolean  "active",              default: true

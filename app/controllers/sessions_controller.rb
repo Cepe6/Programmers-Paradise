@@ -1,8 +1,6 @@
-require 'bcrypt'
 class SessionsController < ApplicationController
-  include BCrypt
-
   skip_before_action :authorize
+
   def new
     @header_picture = 'account.png'
   end

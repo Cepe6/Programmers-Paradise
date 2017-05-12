@@ -1,6 +1,4 @@
-require 'bcrypt'
 class User < ApplicationRecord
-  include BCrypt
   has_attached_file :avatar, styles: {medium: '200x200>', thumb: '30x30>'}, default_url: 'missing.png'
   validates_attachment_content_type :avatar, content_type: /\Aimage\/.*\z/
 
@@ -12,13 +10,4 @@ class User < ApplicationRecord
             :length => { :minimum => 5, :maximum => 40, :message => 'Password must be between 5 and 40 symbols' },
             :confirmation => true
   has_secure_password
-
-  def password
-    @password ||= Password.new(password_hash)
-  end
-
-  def password=(new_password)
-    @password = Password.create(new_password)
-    self.password_hash = @password
-  end
 end

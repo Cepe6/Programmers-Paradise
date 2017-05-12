@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
-  skip_before_action :authorize, only: [:new, :create, :update]
+  skip_before_action :authorize, only: [:new, :create]
 
   layout 'application'
 
@@ -20,6 +20,7 @@ class UsersController < ApplicationController
   # GET /users/new
   def new
     @user = User.new
+    set_default
   end
 
   # GET /users/1/edit
@@ -30,19 +31,20 @@ class UsersController < ApplicationController
   # POST /users
   # POST /users.json
   def create
+    set_default
     @user = User.new(user_params)
-
     if @user.save
       session[:user_id] = @user.id
       redirect_to @user, notice: 'User was successfully created'
     else
-      redirect_to '/users/new', notice: 'Something went wrong'
+      redirect_to '/users/new', notice: @user.errors.message.first
     end
   end
 
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json
   def update
+    set_profile
     respond_to do |format|
       if @user.update(user_params)
         format.html { redirect_to @user, notice: 'User was successfully updated.' }
@@ -73,6 +75,11 @@ class UsersController < ApplicationController
       @profile_picture = @user.avatar.url(:medium)
     end
 
+    def set_default
+      @header_picture = 'account.png'
+      @profile_link = '/users/new'
+    end
+
     # Use callbacks to share common setup or constraints between actions.
     def set_user
       @user = User.find(params[:id])
@@ -80,6 +87,6 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit(:username, :email, :password_digest, :avatar)
+      params.require(:user).permit(:username, :email, :password_digest, :password_confirmation, :avatar)
     end
 end

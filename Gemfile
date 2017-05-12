@@ -8,7 +8,7 @@ end
 
 gem 'ejs'
 gem 'jade-rails', '1.9.2'
-
+gem 'custom_error_message'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'

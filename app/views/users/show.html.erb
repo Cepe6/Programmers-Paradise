@@ -1,21 +1,22 @@
 <p id="notice"><%= notice %></p>
 
 <%= image_tag(@user.avatar.url(:medium), :alt => 'Profile picture goes there', :id => 'profile-picture-page') %>
+<div id="acc-info">
+  <p>
+    <strong>Username:</strong>
+    <%= @user.username %>
+  </p>
 
-<p>
-  <strong>Username:</strong>
-  <%= @user.username %>
-</p>
+  <p>
+    <strong>Email:</strong>
+    <%= @user.email %>
+  </p>
 
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
-
-<p>
-  <strong>Encrypted password:</strong>
-  <%= @user.password_digest %>
-</p>
+  <p>
+    <strong>Encrypted password:</strong>
+    <%= @user.password_digest %>
+  </p>
+</div>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

@@ -6756,3 +6756,328 @@ Processing by UsersController#edit as HTML
 Completed 200 OK in 119ms (Views: 71.0ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/users/new" for 127.0.0.1 at 2017-05-12 09:31:47 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (76.4ms)
+  Rendered users/new.html.erb within layouts/application (79.3ms)
+Completed 500 Internal Server Error in 593ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (nil is not a valid asset source):
+    22:         </nav>
+    23:         <div id="account">
+    24:           <%= link_to @profile_link do %>
+    25:             <%= image_tag(@header_picture, :id => 'account-img', :alt => 'ACC') %>
+    26:           <% end %>
+    27:         </div>
+    28:       </div>
+  
+app/views/layouts/application.html.erb:25:in `block in _app_views_layouts_application_html_erb__2194866164709312290_33662420'
+app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__2194866164709312290_33662420'
+  Rendering /home/cepe6/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/cepe6/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/cepe6/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.4ms)
+  Rendering /home/cepe6/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cepe6/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendering /home/cepe6/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cepe6/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/cepe6/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (30.7ms)
+Started GET "/users/new" for 127.0.0.1 at 2017-05-12 09:33:38 +0300
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (6.1ms)
+  Rendered users/new.html.erb within layouts/application (8.8ms)
+Completed 500 Internal Server Error in 105ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionView::Template::Error (nil is not a valid asset source):
+    22:         </nav>
+    23:         <div id="account">
+    24:           <%= link_to @profile_link do %>
+    25:             <%= image_tag(@header_picture, :id => 'account-img', :alt => 'ACC') %>
+    26:           <% end %>
+    27:         </div>
+    28:       </div>
+  
+app/views/layouts/application.html.erb:25:in `block in _app_views_layouts_application_html_erb__2194866164709312290_69990164126240'
+app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__2194866164709312290_69990164126240'
+  Rendering /home/cepe6/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/cepe6/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/cepe6/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.5ms)
+  Rendering /home/cepe6/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cepe6/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendering /home/cepe6/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cepe6/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/cepe6/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.3ms)
+Started GET "/users/new" for 127.0.0.1 at 2017-05-12 09:33:52 +0300
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (5.6ms)
+  Rendered users/new.html.erb within layouts/application (8.5ms)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (nil is not a valid asset source):
+    22:         </nav>
+    23:         <div id="account">
+    24:           <%= link_to @profile_link do %>
+    25:             <%= image_tag(@header_picture, :id => 'account-img', :alt => 'ACC') %>
+    26:           <% end %>
+    27:         </div>
+    28:       </div>
+  
+app/views/layouts/application.html.erb:25:in `block in _app_views_layouts_application_html_erb__2194866164709312290_69990171632040'
+app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__2194866164709312290_69990171632040'
+  Rendering /home/cepe6/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/cepe6/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/cepe6/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.0ms)
+  Rendering /home/cepe6/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cepe6/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /home/cepe6/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cepe6/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/cepe6/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.2ms)
+Started GET "/users/new" for 127.0.0.1 at 2017-05-12 09:34:28 +0300
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (5.7ms)
+  Rendered users/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 89ms (Views: 65.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-05-12 09:34:39 +0300
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (5.0ms)
+  Rendered users/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 76ms (Views: 53.6ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-05-12 09:35:03 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jh1dEIleksGuiPWkQmOl5thpK69KSWVbqkyDKkk+anOMpgHVJMg1AyTobj0geQ0vpCOyzlbsePcyU8Cjko758A==", "user"=>{"username"=>"Cepe6", "email"=>"new", "password_digest"=>"[FILTERED]", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x007f4fb8681208 @tempfile=#<Tempfile:/tmp/RackMultipart20170512-2531-jlakgr.png>, @original_filename="am-a-19-year-old-multimedia-artist-student-from-manila--21.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"am-a-19-year-old-multimedia-artist-student-from-manila--21.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create User"}
+Command :: file -b --mime '/tmp/2ebb4a754c2a6ef2e1183faf3666b17220170512-2531-1m4bcd2.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/2ebb4a754c2a6ef2e1183faf3666b17220170512-2531-vmjjcf.png[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/2ebb4a754c2a6ef2e1183faf3666b17220170512-2531-vmjjcf.png[0]'
+Command :: convert '/tmp/2ebb4a754c2a6ef2e1183faf3666b17220170512-2531-vmjjcf.png[0]' -auto-orient -resize "300x300>" '/tmp/fbeedbe7fa6d856f276d8a8e460cb24220170512-2531-1058hca'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/2ebb4a754c2a6ef2e1183faf3666b17220170512-2531-vmjjcf.png[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/2ebb4a754c2a6ef2e1183faf3666b17220170512-2531-vmjjcf.png[0]'
+Command :: convert '/tmp/2ebb4a754c2a6ef2e1183faf3666b17220170512-2531-vmjjcf.png[0]' -auto-orient -resize "30x30>" '/tmp/fbeedbe7fa6d856f276d8a8e460cb24220170512-2531-1ozefgy'
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+Command :: file -b --mime '/tmp/2ebb4a754c2a6ef2e1183faf3666b17220170512-2531-wz70oq.png'
+  [1m[35mSQL (18.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["username", "Cepe6"], ["email", "new"], ["password_digest", "what?"], ["created_at", 2017-05-12 06:35:04 UTC], ["updated_at", 2017-05-12 06:35:04 UTC], ["avatar_file_name", "am-a-19-year-old-multimedia-artist-student-from-manila--21.png"], ["avatar_content_type", "image/png"], ["avatar_file_size", 11808], ["avatar_updated_at", 2017-05-12 06:35:03 UTC]]
+  [1m[35m (118.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 956ms (ActiveRecord: 137.5ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2017-05-12 09:35:04 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 68ms (Views: 50.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-05-12 09:39:48 +0300
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (32.3ms)
+  Rendered users/new.html.erb within layouts/application (33.6ms)
+Completed 200 OK in 104ms (Views: 81.1ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-05-12 09:45:48 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Rm0m6/jLujZEwrY/7q8VPUrIbu8idB7A5bPmZcHo2+BE1nouVV0d9M6iLaaMtb30NoL3jj7RA2x9rKXsGlhIYw==", "user"=>{"username"=>"Cepe6", "email"=>"what?", "password_digest"=>"[FILTERED]"}, "commit"=>"Create User"}
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 1.0ms)
+
+
+  
+NoMethodError (undefined method `confirmation_password' for #<User:0x007f4fb87c6320>):
+  
+app/controllers/users_controller.rb:36:in `create'
+  Rendering /home/cepe6/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/cepe6/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/cepe6/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.9ms)
+  Rendering /home/cepe6/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cepe6/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /home/cepe6/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cepe6/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /home/cepe6/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.9ms)
+Started GET "/users" for 127.0.0.1 at 2017-05-12 09:46:55 +0300
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 120ms (Views: 77.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-05-12 09:47:04 +0300
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (4.3ms)
+  Rendered users/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 53ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-05-12 09:47:28 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T4WKJSflKiQlmfvBmUIIXhNyrYRoWaMwhKABGYArde+5wa2FG59Boj7wkrpoOwQ8wApPZO4Qs7WXxyMRGBI5nA==", "user"=>{"username"=>"Cepe6", "email"=>"what?", "password_digest"=>"[FILTERED]", "confirmation_password"=>"[FILTERED]"}, "commit"=>"Create User"}
+Unpermitted parameter: confirmation_password
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-05-12 09:47:28 +0300
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (4.5ms)
+  Rendered users/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 49ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-05-12 09:47:36 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fYYGQ73sbNbdvyQ8XS7A0VU1E9dTjrdr/Sc3kMVKR/1/PVqGEHrLFFffv6U/NGgYKX+Ktk8rqsdlOHQZHvrUfg==", "user"=>{"username"=>"Cepe6", "email"=>"what?", "password_digest"=>"[FILTERED]", "confirmation_password"=>"[FILTERED]"}, "commit"=>"Create User"}
+Unpermitted parameter: confirmation_password
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-05-12 09:47:36 +0300
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (3.1ms)
+  Rendered users/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 48ms (Views: 46.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-05-12 09:55:37 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"umzLqvnXKSfpyvWc/H/76QGcbZuF7ROHW3ab4CFlvCe415dvVEGO5WOqbgWeZVMgfdb0+plIDivDadhp+tUvpA==", "user"=>{"username"=>"Cepe6", "email"=>"what?", "password_digest"=>"[FILTERED]", "confirmation_password"=>"[FILTERED]"}, "commit"=>"Create User"}
+Unpermitted parameter: confirmation_password
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "what?"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Cepe6"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 187ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-05-12 09:55:37 +0300
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (3.2ms)
+  Rendered users/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 42ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-05-12 09:56:10 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/8AgcBhl0vAU5gi9H4yFKnaR+IX68NMtKzmQ5tY7bjr9e3y1tfN1Mp6GkyR9li3jCtth5OZVzoGzJtNvDYv9uQ==", "user"=>{"username"=>"what?", "email"=>"what?", "password_digest"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "what?"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "what?"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 11ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-05-12 09:56:10 +0300
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (3.1ms)
+  Rendered users/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 48ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-05-12 09:56:49 +0300
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 57ms (Views: 49.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-05-12 10:05:59 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (30.3ms)
+  Rendered users/new.html.erb within layouts/application (32.5ms)
+Completed 200 OK in 578ms (Views: 540.7ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-05-12 10:06:17 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sVfa5DbOBrsVEQBHfVolr2fYO7f5pwak5M63Yhhyiq6z7IYhm1iheZ9xm94fQI1mG5Ki1uUCGwh80fTrw8IZLQ==", "user"=>{"username"=>"vladko", "email"=>"vladko", "password_digest"=>"[FILTERED]", "password_digest_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+Unpermitted parameter: password_digest_confirmation
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "vladko"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "vladko"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 18ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-05-12 10:06:17 +0300
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (3.0ms)
+  Rendered users/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 47ms (Views: 45.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-05-12 10:33:58 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.8ms)
+
+
+  
+NameError (undefined local variable or method `email' for #<Class:0x0000000396e850>):
+  
+app/models/user.rb:5:in `<class:User>'
+app/models/user.rb:1:in `<top (required)>'
+app/controllers/users_controller.rb:22:in `new'
+  Rendering /home/cepe6/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/cepe6/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/cepe6/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.7ms)
+  Rendering /home/cepe6/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cepe6/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /home/cepe6/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cepe6/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/cepe6/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.9ms)
+Started GET "/users/new" for 127.0.0.1 at 2017-05-12 10:34:32 +0300
+Started GET "/users/new" for 127.0.0.1 at 2017-05-12 10:34:44 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (Unknown validator: 'MessageValidator'):
+  
+app/models/user.rb:4:in `<class:User>'
+app/models/user.rb:1:in `<top (required)>'
+app/controllers/users_controller.rb:22:in `new'
+  Rendering /home/cepe6/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/cepe6/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/cepe6/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.4ms)
+  Rendering /home/cepe6/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cepe6/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /home/cepe6/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cepe6/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/cepe6/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.5ms)

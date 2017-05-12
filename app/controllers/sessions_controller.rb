@@ -8,14 +8,8 @@ class SessionsController < ApplicationController
   def create
     @header_picture = 'account.png'
 
-    user = User.find_by(username: params[:username])
-    if user && user.password_digest == params[:password_digest]
-      session[:user_id] = user.id
-      redirect_to user
-    end
     @user = User.find_by_username(params[:username])
     if @user.password_digest == params[:password_digest]
-      #@user = user
       session[:user_id] = @user.id
       redirect_to @user
     else
@@ -25,6 +19,6 @@ class SessionsController < ApplicationController
 
   def destroy
     session[:user_id] = nil
-    redirect login_url, alert:'You have successfully logged out!'
+    redirect_to '/', alert:'You have successfully logged out!'
   end
 end

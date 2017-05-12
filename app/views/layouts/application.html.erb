@@ -20,10 +20,14 @@
             <li><a href="/jobs">Find job</a></li>
           </ul>
         </nav>
-
+        <div id="account">
+          <%= link_to @profile_link do %>
+            <%= image_tag(@header_picture, :id => 'account-img', :alt => 'ACC') %>
+          <% end %>
+        </div>
       </div>
     </header>
-    <section id="wrapper" class="bordering">
+    <section id="wrapper">
     <%= yield %>
     </section>
   </body>

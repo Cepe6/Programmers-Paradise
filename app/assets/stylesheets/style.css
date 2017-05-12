@@ -44,6 +44,7 @@ body {
 }
 
 .profile-name {
+    position: relative;
     display: inline-block;
     height: 150px;
     width: 150px;
@@ -60,4 +61,43 @@ body {
 
 .account-header {
     
+}
+
+.welcome-page-div {
+    height: 250px;
+
+    border: 1px solid white;
+}
+
+.welcome-text-span {
+    font-family: brandon-grotesque, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+
+    color: #1E4369;
+
+    width: 48%;
+
+    margin-top: 60px;
+    font-size: 40px;
+    text-align: center;
+
+    line-height: 90%;
+
+}
+
+#welcome-page-image {
+    vertical-align: top;
+    width: 400px;
+    height: 100%;
+
+    border: 1px solid black;
+}
+
+.float_left {
+    float: left;
+}
+
+.float_right {
+    float: right;
 }

@@ -1,1 +1,22 @@
-<h1>Hello!!!</h1>
+<div class="welcome-page-div">
+  <%= image_tag('sample.png', alt: 'Game', id: 'welcome-page-image', class: 'float_left') %>
+  <p class="welcome-text-span float_right">
+    Welcome!<br/>
+    Wanna start with our fun programming game?
+  </p>
+</div>
+
+<div class="welcome-page-div">
+  <p class="welcome-text-span float_left">
+  Or perhaps you wanna start learning?
+  </p>
+  <%= image_tag('sample.png', alt: 'Teaching', id: 'welcome-page-image', class: 'float_right') %>
+</div>
+
+<div class="welcome-page-div">
+  <%= image_tag('sample.png', alt: 'And more', id: 'welcome-page-image', class: 'float-left') %>
+  <p class="welcome-text-span float_right">
+    And much more! <br />
+    <button type="button" onclick="window.location.href='/users/new'" class="sign-button" style="margin-top: 20px">Join Us</button>
+  </p>
+</div>

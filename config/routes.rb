@@ -11,4 +11,6 @@ Rails.application.routes.draw do
   end
 
   root 'main#index'
+
+  get '/home' => 'main#home'
 end

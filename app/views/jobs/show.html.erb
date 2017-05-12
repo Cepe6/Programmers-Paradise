@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Author:</strong>
+  <%= User.find(@job.author_id).username %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @job.description %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @job.job_type %>
+</p>
+
+<p>
+  <strong>Salary:</strong>
+  <%= @job.salary %>
+</p>
+
+<p>
+  <strong>Currency:</strong>
+  <%= @job.currency %>
+</p>
+
+<%= link_to 'Edit', edit_job_path(@job) %> |
+<%= link_to 'Back', jobs_path %>

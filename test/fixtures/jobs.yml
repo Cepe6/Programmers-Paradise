@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  author_id: 1
+  description: MyText
+  type:
+  salary: 1
+  currency: MyString
+
+two:
+  author_id: 1
+  description: MyText
+  type: 
+  salary: 1
+  currency: MyString

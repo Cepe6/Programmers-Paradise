@@ -1,24 +1,28 @@
 class SessionsController < ApplicationController
   skip_before_action :authorize
+
+  # GET /login
   def new
     @header_picture = 'account.png'
   end
 
+  # POST /login
   def create
     @header_picture = 'account.png'
 
     user = User.find_by(username: params[:username])
-    if user and user.authenticate(params[:password_digest])
-      @user = user
-      sessions[:user_id] = user_id
+    if user && user.authenticate(params[:password_digest])
+      session[:user_id] = user.id
       redirect_to user
     else
-      redirect_to login_url, alert:'Invalid username or password!'
+      redirect_to '/login', alert:'Invalid username or password!'
     end
   end
 
+  # GET /logout
   def destroy
-    sessions[:user_id] = nil
-    redirect login_url, alert:'You have successfully logged out!'
+    User.find_by(id: session[:user_id]).active = false
+    session[:user_id] = nil
+    redirect_to '/login', alert:'You have successfully logged out!'
   end
 end

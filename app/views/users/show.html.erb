@@ -16,6 +16,21 @@
     <strong>Encrypted password:</strong>
     <%= @user.password_digest %>
   </p>
+
+  <p>
+    <strong>Country:</strong>
+    <%= @user.country %>
+  </p>
+
+  <p>
+    <strong>Gender:</strong>
+    <%= @user.gender %>
+  </p>
+
+  <p>
+    <strong>Position:</strong>
+    <%= @user.position %>
+  </p>
 </div>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |

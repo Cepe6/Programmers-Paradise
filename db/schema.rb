@@ -13,11 +13,27 @@
 ActiveRecord::Schema.define(version: 20170511231330) do
 
   create_table "users", force: :cascade do |t|
+    t.boolean  "active",              default: true
     t.string   "username"
     t.string   "email"
     t.string   "password_digest"
-    t.datetime "created_at",          null: false
-    t.datetime "updated_at",          null: false
+    t.string   "position"
+    t.string   "cv_file_name"
+    t.string   "cv_content_type"
+    t.integer  "cv_file_size"
+    t.datetime "cv_updated_at"
+    t.datetime "birthdate"
+    t.string   "gender"
+    t.string   "preffered_langs"
+    t.string   "country"
+    t.integer  "forum_points",        default: 0
+    t.string   "feedbacks"
+    t.string   "tutorials"
+    t.integer  "tutorial_points",     default: 0
+    t.string   "teaching_courses"
+    t.integer  "teaching_points",     default: 0
+    t.datetime "created_at",                         null: false
+    t.datetime "updated_at",                         null: false
     t.string   "avatar_file_name"
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"

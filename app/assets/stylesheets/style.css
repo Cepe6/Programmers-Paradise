@@ -46,26 +46,48 @@ body {
 .profile-name {
     position: relative;
     display: inline-block;
-    height: 150px;
-    width: 150px;
+    width: 300px;
+
+
+    font-family: brandon-grotesque, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+
+    color: #1E4369;
+
+    font-size: 20px;
+    line-height: 100%;
+    vertical-align: top;
+
 }
 
 .profile-points {
-    margin: 0 auto;
-    display: inline;
+
+    display: inline-block;
+
+    font-family: brandon-grotesque, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+
+    color: #1E4369;
+
+    font-size: 15px;
+    line-height: 100%;
 }
 
 #profile-picture-page {
-    max-width: 150px;
+    width: 150px;
+    height: 150px;
+    vertical-align: top;
+    float: left;
 }
 
 .account-header {
-    
+    margin: 0 auto;
 }
 
 .welcome-page-div {
     height: 250px;
-
     border: 1px solid white;
 }
 
@@ -90,8 +112,12 @@ body {
     vertical-align: top;
     width: 400px;
     height: 100%;
+}
 
-    border: 1px solid black;
+#welcome-page-header-img {
+    vertical-align: top;
+    width: 100%;
+    height: 100%;
 }
 
 .float_left {
@@ -100,4 +126,8 @@ body {
 
 .float_right {
     float: right;
+}
+
+#acc-info {
+    margin: 0 auto;
 }

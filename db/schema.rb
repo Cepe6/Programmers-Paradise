@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170512092246) do
+ActiveRecord::Schema.define(version: 20170513062945) do
 
   create_table "jobs", force: :cascade do |t|
     t.integer  "author_id"
@@ -21,6 +21,15 @@ ActiveRecord::Schema.define(version: 20170512092246) do
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.string   "title"
+  end
+
+  create_table "tutorials", force: :cascade do |t|
+    t.string   "youtube_id"
+    t.string   "youtube_name"
+    t.text     "youtube_description"
+    t.integer  "youtube_votes"
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
   end
 
   create_table "users", force: :cascade do |t|

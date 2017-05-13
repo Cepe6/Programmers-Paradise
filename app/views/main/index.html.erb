@@ -1,5 +1,9 @@
+<div class="welcome-page-div" style="height: 400px; margin-bottom: 30px">
+  <%= image_tag('header_image.png', alt: 'Game', id: 'welcome-page-header-img') %>
+</div>
+
 <div class="welcome-page-div">
-  <%= image_tag('sample.png', alt: 'Game', id: 'welcome-page-image', class: 'float_left') %>
+  <%= image_tag('game.png', alt: 'Game', id: 'welcome-page-image', class: 'float_left') %>
   <p class="welcome-text-span float_right">
     Welcome!<br/>
     Wanna start with our fun programming game?
@@ -10,11 +14,11 @@
   <p class="welcome-text-span float_left">
   Or perhaps you wanna start learning?
   </p>
-  <%= image_tag('sample.png', alt: 'Teaching', id: 'welcome-page-image', class: 'float_right') %>
+  <%= image_tag('teaching.png', alt: 'Teaching', id: 'welcome-page-image', class: 'float_right') %>
 </div>
 
 <div class="welcome-page-div">
-  <%= image_tag('sample.png', alt: 'And more', id: 'welcome-page-image', class: 'float-left') %>
+  <%= image_tag('more.jpg', alt: 'And more', id: 'welcome-page-image', class: 'float-left') %>
   <p class="welcome-text-span float_right">
     And much more! <br />
     <button type="button" onclick="window.location.href='/users/new'" class="sign-button" style="margin-top: 20px">Join Us</button>

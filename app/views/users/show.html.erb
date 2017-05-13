@@ -1,37 +1,31 @@
 <p id="notice"><%= notice %></p>
-<div class="account-header bordering">
-  <%= image_tag(@user.avatar.url(:medium), :class => 'bordering', :id => 'profile-picture-page') %>
-  <div class="profile-name bordering">
-    <strong>Username:</strong>
+<div class="account-header ">
+  <%= image_tag(@user.avatar.url(:medium), :class => 'bordering', :id => 'profile-picture-page', :style => 'vertical-align: top, float: left') %>
+  <p class="profile-name ">
+    <strong>Username:</strong><br />
     <%= @user.username %>
     <br />
-    <strong>E-mail:</strong>
+    <strong>E-mail:</strong><br />
     <%= @user.email %>
-  </div>
+  </p>
 
-  <div class="profile-points bordering">
+  <p class="profile-points ">
     <strong>Forum points:</strong>
     <%= @user.forum_points %>
-
+    <br/>
+    <br/>
+    <br/>
     <strong>Tutorial points:</strong>
     <%= @user.tutorial_points %>
-
+    <br/>
+    <br/>
+    <br/>
     <strong>Teaching points:</strong>
     <%= @user.teaching_points %>
-  </div>
+  </p>
 </div>
 
-<div id="acc-info" class="bordering">
-  <div class="profile-info">
-    <strong>Username:</strong>
-    <%= @user.username %>
-  </div>
-
-  <div class="profile-info">
-    <strong>Email:</strong>
-    <%= @user.email %>
-  </div>
-
+<div id="acc-info" class="">
   <div class="profile-info">
     <strong>Country:</strong>
     <%= @user.country %>
